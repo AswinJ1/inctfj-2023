@@ -474,296 +474,430 @@ import React from 'react';
 
 const questions = [
   {
-   
-    'question': 'What is InCTF Junior?',
-    'keywords': ['inctf junior', 'what is'],
+    
+    'question': 'What is InCTF?',
+    'keywords': ['inctf', 'what is'],
     'response': [
-      'InCTF Junior is a national-level Capture The Flag (CTF) cybersecurity contest exclusively designed for school students.',
+      'InCTF (Indian Capture The Flag) is a national-level cybersecurity contest hosted by Amrita Vishwa Vidyapeetham.',
     ],
     'answer': <>
-      InCTF Junior is a national-level Capture The Flag (CTF) cybersecurity contest exclusively designed for school students, 
-      organized by Amrita Vishwa Vidyapeetham. It aims to introduce young minds to ethical hacking and cybersecurity 
-      in a fun and educational way.
+      InCTF (Indian Capture The Flag) is a national-level cybersecurity contest hosted by Amrita Vishwa Vidyapeetham. 
+      It is designed to promote awareness, learning, and hands-on experience in ethical hacking and cybersecurity.
     </>,
     tags: ['getting-started'],
   },
   {
-   
-    'question': 'Who can participate in InCTF Junior?',
+    
+    'question': 'Who can participate in InCTF?',
     'keywords': ['who', 'participate', 'eligibility'],
     'response': [
-      'Students from grades 7 to 12 (or equivalent) studying in schools across India are eligible to participate.',
+      'InCTF is open to college students, working professionals, and cybersecurity enthusiasts across India.',
     ],
     'answer': <>
-      Students from grades 7 to 12 (or equivalent) studying in schools across India are eligible to participate.
+      InCTF is open to college students, working professionals, and cybersecurity enthusiasts across India. 
+      Both beginners and advanced participants are encouraged to join.
     </>,
     tags: ['eligibility'],
   },
   {
-   
-    'question': 'Do I need a computer to participate?',
-    'keywords': ['computer', 'laptop', 'requirements'],
+    
+    'question': 'What do I need to participate?',
+    'keywords': ['requirements', 'need'],
     'response': [
-      'Yes, you\'ll need a computer or laptop with internet access.',
+      'You need: A computer with internet access',
     ],
     'answer': <>
-      Yes, you'll need a computer or laptop with internet access. A basic browser is sufficient for most challenges.
+      You need:
+      <ul>
+        <li>A computer (preferably a laptop/desktop with internet access)</li>
+        <li>Basic knowledge of Linux, networking, or programming (helpful but not mandatory)</li>
+        <li>An inquisitive mindset and willingness to learn</li>
+      </ul>
     </>,
     tags: ['requirements'],
   },
   {
-   
-    'question': 'Do I need prior knowledge in cybersecurity?',
-    'keywords': ['prior knowledge', 'experience'],
-    'response': [
-      'No prior experience is required.',
-    ],
-    'answer': <>
-      No prior experience is required. The competition is beginner-friendly, and training resources are provided 
-      to help students learn from the ground up.
-    </>,
-    tags: ['getting-started'],
-  },
-  {
-   
-    'question': 'How do I register for InCTF Junior?',
+    
+    'question': 'How do I register for InCTF?',
     'keywords': ['register', 'registration'],
     'response': [
-      'You can register through the official InCTF Junior website.',
+      'You can register through the official InCTF website.',
     ],
     'answer': <>
-      You can register through the official InCTF Junior website. Follow the registration steps and wait for 
-      updates via email.
+      You can register through the official InCTF website. Follow the instructions provided there and keep an eye 
+      on your registered email for updates.
     </>,
     tags: ['getting-started'],
   },
   {
-   
-    'question': 'Is there a registration fee?',
-    'keywords': ['fee', 'cost'],
-    'response': [
-      'Yes, a nominal team registration fee is applicable.',
-    ],
-    'answer': <>
-      Yes, a nominal team registration fee is applicable. Please check the website for the current fee structure.
-    </>,
-    tags: ['requirements'],
-  },
-  {
-   
-    'question': 'Can I participate individually or as a team?',
-    'keywords': ['team', 'individual'],
-    'response': [
-      'InCTF Junior is strictly an individual competition.',
-    ],
-    'answer': <>
-      InCTF Junior is strictly an individual competition. You must participate individually — teams are not allowed.
-    </>,
-    tags: ['rules'],
-  },
-  {
-   
-    'question': 'What are the phases in InCTF Junior?',
+    
+    'question': 'What are the phases in InCTF?',
     'keywords': ['phases', 'stages'],
     'response': [
-      'InCTF Junior consists of three phases:',
+      'Typically, InCTF consists of multiple phases:',
     ],
     'answer': <>
-      InCTF Junior consists of:
+      Typically, InCTF consists of:
       <ul>
-        <li>Training Phase: Self-paced learning and practice</li>
-        <li>Qualifier Round: Online challenge round</li>
-        <li>Final Round: Selected top teams (Offline)</li>
+        <li>Training Phase – Online learning resources and practice challenges</li>
+        <li>Qualifier CTF – Online preliminary round</li>
+        <li>Final CTF Round – For top performers, which may be online or on-site</li>
       </ul>
     </>,
     tags: ['structure'],
   },
   {
-   
-    'question': 'What kind of challenges are included?',
-    'keywords': ['challenges', 'topics'],
+    
+    'question': 'Can I participate as a team?',
+    'keywords': ['team', 'individual'],
     'response': [
-      'Challenges are age-appropriate and cover various cybersecurity topics.',
+      'Yes, it\'s a team participation.',
     ],
     'answer': <>
-      Challenges are age-appropriate and cover topics like basic web security, cryptography, logic puzzles, 
-      forensics, and beginner-level coding.
-    </>,
-    tags: ['content'],
-  },
-  {
-   
-    'question': 'What should I know before participating?',
-    'keywords': ['prepare', 'knowledge'],
-    'response': [
-      'Basic computer skills and logical thinking are enough.',
-    ],
-    'answer': <>
-      Basic computer skills, logical thinking, and a willingness to learn are enough. Guidance is provided throughout.
-    </>,
-    tags: ['getting-started'],
-  },
-  {
-   
-    'question': 'Will training be provided?',
-    'keywords': ['training', 'resources'],
-    'response': [
-      'Yes, participants get access to structured training modules.',
-    ],
-    'answer': <>
-      Yes, participants get access to structured training modules, practice problems, and beginner-friendly tutorials.
-    </>,
-    tags: ['resources'],
-  },
-  {
-   
-    'question': 'Do I need to install any software?',
-    'keywords': ['software', 'tools'],
-    'response': [
-      'Most challenges can be solved using a web browser.',
-    ],
-    'answer': <>
-      Most challenges can be solved using a web browser. Some optional tools may be suggested for advanced practice, 
-      but installation is not mandatory.
-    </>,
-    tags: ['requirements'],
-  },
-  {
-   
-    'question': 'How long does the event last?',
-    'keywords': ['duration', 'time'],
-    'response': [
-      'The training is open for several weeks.',
-    ],
-    'answer': <>
-      The training is open for several weeks. The qualifier round usually lasts 24 hours, and the final round 
-      varies based on the format.
-    </>,
-    tags: ['schedule'],
-  },
-  {
-   
-    'question': 'What support is available during the competition?',
-    'keywords': ['support', 'help'],
-    'response': [
-      'A support channel will be available during the contest.',
-    ],
-    'answer': <>
-      A support channel (such as Discord or email) will be available during the contest to assist participants 
-      with any doubts or technical issues.
-    </>,
-    tags: ['support'],
-  },
-  {
-   
-    'question': 'How are the challenges scored?',
-    'keywords': ['scoring', 'points'],
-    'response': [
-      'Each challenge has a point value based on its difficulty.',
-    ],
-    'answer': <>
-      Each challenge has a point value based on its difficulty. Your rank is determined by your total score 
-      and the time taken.
+      Yes, it's a team participation, usually with teams of up to 3 members. Please check the current year's rules for confirmation.
     </>,
     tags: ['rules'],
   },
   {
-   
-    'question': 'Will I receive a certificate?',
-    'keywords': ['certificate'],
+    
+    'question': 'What kind of topics are covered in the CTF challenges?',
+    'keywords': ['topics', 'challenges'],
     'response': [
-      'Yes, digital certificates will be provided.',
+      'Challenges cover a wide range of topics, including:',
     ],
     'answer': <>
-      Yes, it shall be issued to all eligible Participants who have at least solved 1 challenge in the Contest 
-      qualifiers round. This shall be a digital certificate, and shall be emailed at the end of the Contest. 
-      Top performers receive additional awards.
+      Challenges cover a wide range of topics, including:
+      <ul>
+        <li>Web Security</li>
+        <li>Cryptography</li>
+        <li>Reverse Engineering</li>
+        <li>Forensics</li>
+        <li>Binary Exploitation</li>
+        <li>OSINT (Open-Source Intelligence)</li>
+        <li>Miscellaneous</li>
+      </ul>
     </>,
-    tags: ['certificate'],
+    tags: ['content'],
   },
   {
-   
-    'question': 'Are there prizes for winners?',
-    'keywords': ['prizes', 'awards'],
+    
+    'question': 'Do I need to be a cybersecurity expert to join?',
+    'keywords': ['expert', 'beginner'],
     'response': [
-      'Yes, InCTF Junior includes exciting prizes.',
+      'No. InCTF is learning-focused.',
     ],
     'answer': <>
-      Yes, InCTF Junior includes exciting prizes for top-performing participants in both the overall and 
-      beginner categories.
+      No. InCTF is learning-focused and welcomes both beginners and experienced participants.
     </>,
-    tags: ['prizes'],
+    tags: ['getting-started'],
   },
   {
-   
-    'question': 'Can international students participate?',
-    'keywords': ['international', 'nri'],
+    
+    'question': 'Is there a registration fee?',
+    'keywords': ['fee', 'cost'],
     'response': [
-      'Currently, InCTF Junior is open only to students studying in India.',
+      'Yes. A team registration fee will be applicable.',
     ],
     'answer': <>
-      Currently, InCTF Junior is open only to students studying in India.
-    </>,
-    tags: ['eligibility'],
-  },
-  {
-   
-    'question': 'How do I know if I qualify for the finals?',
-    'keywords': ['qualify', 'finals'],
-    'response': [
-      'Finalist teams will be notified via email.',
-    ],
-    'answer': <>
-      Finalist teams will be notified via email, and the results will be published on the official website.
-    </>,
-    tags: ['qualifiers'],
-  },
-  {
-   
-    'question': 'Where can I find previous challenges?',
-    'keywords': ['previous', 'past'],
-    'response': [
-      'Past challenges are available on the InCTF Junior website.',
-    ],
-    'answer': <>
-      Past challenges and training content are available on the InCTF Junior website and official learning portals.
-    </>,
-    tags: ['resources'],
-  },
-  {
-   
-    'question': 'What tools will I use during the CTF?',
-    'keywords': ['tools'],
-    'response': [
-      'Most tools are browser-based.',
-    ],
-    'answer': <>
-      Most tools are browser-based. For advanced learners, optional tools like CyberChef, basic Linux commands, 
-      or Python scripts may be used.
+      Yes. A team registration fee will be applicable. Please refer to the official website for current details.
     </>,
     tags: ['requirements'],
   },
   {
-   
-    'question': 'How do I contact the organizers?',
-    'keywords': ['contact', 'organizers'],
+    
+    'question': 'What are the benefits of participating?',
+    'keywords': ['benefits', 'advantages'],
     'response': [
-      'You can email the InCTF Junior team.',
+      'Gain hands-on cybersecurity experience',
     ],
     'answer': <>
-      You can email the InCTF Junior team or use the contact form on the official website for queries or support.
+      <ul>
+        <li>Gain hands-on cybersecurity experience</li>
+        <li>Access free training content</li>
+        <li>Improve your resume and practical skills</li>
+        <li>Compete at a national level and gain recognition</li>
+        <li>Win exciting prizes and certificates</li>
+      </ul>
+    </>,
+    tags: ['benefits'],
+  },
+  {
+    
+    'question': 'Are there any learning resources available?',
+    'keywords': ['resources', 'learning'],
+    'response': [
+      'Yes. The InCTF team provides extensive free training material.',
+    ],
+    'answer': <>
+      Yes. The InCTF team provides extensive free training material, walkthroughs, and practice problems 
+      to help participants prepare.
+    </>,
+    tags: ['resources'],
+  },
+  {
+    
+    'question': 'Will I get a certificate?',
+    'keywords': ['certificate'],
+    'response': [
+      'Yes. All participants who complete certain stages will receive digital certificates.',
+    ],
+    'answer': <>
+      Yes. All participants who complete certain stages (such as training or qualifiers) will receive digital 
+      certificates. Top performers receive additional awards and recognition.
+    </>,
+    tags: ['certificate'],
+  },
+  {
+    
+    'question': 'How do I see my rank or score?',
+    'keywords': ['rank', 'score', 'scoreboard'],
+    'response': [
+      'Your rank and score will be visible on the official scoreboard.',
+    ],
+    'answer': <>
+      Your rank and score will be visible on the official scoreboard in real-time during the CTF.
+    </>,
+    tags: ['scoring'],
+  },
+  {
+    
+    'question': 'Where can I get updates?',
+    'keywords': ['updates', 'announcements'],
+    'response': [
+      'All updates will be shared via registered email and on InCTF\'s official channels.',
+    ],
+    'answer': <>
+      All updates will be shared via registered email and on InCTF's official website and social media channels 
+      (LinkedIn, Twitter, Instagram).
     </>,
     tags: ['support'],
   },
   {
-   
-    'question': 'Where can I get updates?',
-    'keywords': ['updates', 'announcements'],
+    
+    'question': 'How long does each round of InCTF last?',
+    'keywords': ['duration', 'time'],
     'response': [
-      'All official announcements will be made through email and the website.',
+      'Training Phase: Usually open for a few weeks',
     ],
     'answer': <>
-      All official announcements will be made through email and the InCTF Junior website and social media channels.
+      <ul>
+        <li>Training Phase: Usually open for a few weeks</li>
+        <li>Qualifier CTF: Runs for 24 to 48 hours</li>
+        <li>Finals: May last one or more days depending on the edition</li>
+      </ul>
+    </>,
+    tags: ['schedule'],
+  },
+  {
+    
+    'question': 'What if I face technical issues during the CTF?',
+    'keywords': ['support', 'technical', 'help'],
+    'response': [
+      'A dedicated support team will be available during the event.',
+    ],
+    'answer': <>
+      A dedicated support team will be available via platforms like Discord, Slack, or email during the event to assist you.
+    </>,
+    tags: ['support'],
+  },
+  {
+    
+    'question': 'What skill level is required to reach the finals?',
+    'keywords': ['skill', 'level', 'finals'],
+    'response': [
+      'Participants who solve multiple mid-to-advanced-level challenges usually qualify.',
+    ],
+    'answer': <>
+      Participants who solve multiple mid-to-advanced-level challenges in the qualifier usually qualify for the finals. 
+      A good understanding of cybersecurity basics is recommended.
+    </>,
+    tags: ['qualifiers'],
+  },
+  {
+    
+    'question': 'Is the competition entirely online?',
+    'keywords': ['online', 'offline'],
+    'response': [
+      'The training and qualifier rounds are fully online.',
+    ],
+    'answer': <>
+      Yes, the training and qualifier rounds are fully online. Finals may be conducted online or on-site depending 
+      on the edition and guidelines.
+    </>,
+    tags: ['structure'],
+  },
+  {
+    
+    'question': 'Do I need to submit write-ups for the challenges?',
+    'keywords': ['write-ups', 'solutions'],
+    'response': [
+      'Write-ups are optional during the training and qualifier phases.',
+    ],
+    'answer': <>
+      Write-ups are optional during the training and qualifier phases but may be required during the finals for evaluation.
+    </>,
+    tags: ['rules'],
+  },
+  {
+    
+    'question': 'Which communication platform is used during the event?',
+    'keywords': ['communication', 'platform'],
+    'response': [
+      'Most editions use platforms like Discord or Slack.',
+    ],
+    'answer': <>
+      Most editions use platforms like Discord or Slack for announcements, support, and interaction.
+    </>,
+    tags: ['support'],
+  },
+  {
+    
+    'question': 'Are the challenges static or dynamic?',
+    'keywords': ['static', 'dynamic', 'challenges'],
+    'response': [
+      'InCTF includes both types of challenges.',
+    ],
+    'answer': <>
+      InCTF includes both:
+      <ul>
+        <li>Static challenges with downloadable files</li>
+        <li>Dynamic/live challenges hosted on servers</li>
+      </ul>
+    </>,
+    tags: ['content'],
+  },
+  {
+    
+    'question': 'Are students from all academic branches eligible?',
+    'keywords': ['branches', 'academic'],
+    'response': [
+      'Yes. Students from any academic background are welcome.',
+    ],
+    'answer': <>
+      Yes. Students from any academic background (Computer Science, Electronics, Mechanical, etc.) are welcome to participate.
+    </>,
+    tags: ['eligibility'],
+  },
+  {
+    
+    'question': 'I\'ve never participated in a CTF before. Will I be lost?',
+    'keywords': ['beginner', 'first time'],
+    'response': [
+      'No. InCTF is beginner-friendly.',
+    ],
+    'answer': <>
+      No. InCTF is beginner-friendly and provides training materials, walkthroughs, and community support to help you get started.
+    </>,
+    tags: ['getting-started'],
+  },
+  {
+    
+    'question': 'Is hacking during the competition legal?',
+    'keywords': ['legal', 'ethics'],
+    'response': [
+      'Yes, but only within the InCTF platform.',
+    ],
+    'answer': <>
+      Yes, but only within the InCTF platform. External attacks or unauthorized activity are strictly prohibited 
+      and result in disqualification.
+    </>,
+    tags: ['rules'],
+  },
+  {
+    
+    'question': 'How are the points calculated?',
+    'keywords': ['points', 'scoring'],
+    'response': [
+      'Challenges have point values based on difficulty.',
+    ],
+    'answer': <>
+      Challenges have point values based on difficulty. Some rounds may use partial or dynamic scoring 
+      (based on the number of solves).
+    </>,
+    tags: ['scoring'],
+  },
+  {
+    
+    'question': 'What are the prizes?',
+    'keywords': ['prizes', 'awards'],
+    'response': [
+      'InCTF usually offers various prizes.',
+    ],
+    'answer': <>
+      InCTF usually offers:
+      <ul>
+        <li>Cash prizes</li>
+        <li>Swags and goodies</li>
+        <li>Internship opportunities</li>
+        <li>Certificates of excellence</li>
+      </ul>
+      (Details are announced on the official site.)
+    </>,
+    tags: ['prizes'],
+  },
+  {
+    
+    'question': 'Can international students participate?',
+    'keywords': ['international', 'nri'],
+    'response': [
+      'InCTF is primarily for Indian participants.',
+    ],
+    'answer': <>
+      InCTF is primarily for Indian participants, though select editions may allow international students. 
+      Please refer to the rules of the current edition.
+    </>,
+    tags: ['eligibility'],
+  },
+  {
+    
+    'question': 'What tools or platforms are commonly used?',
+    'keywords': ['tools', 'platforms'],
+    'response': [
+      'Participants often use various cybersecurity tools.',
+    ],
+    'answer': <>
+      Participants often use tools like:
+      <ul>
+        <li>Kali Linux, Burp Suite, Wireshark</li>
+        <li>Python, Bash, Ghidra, GDB</li>
+        <li>Online platforms such as CyberChef, HackTricks, and others</li>
+      </ul>
+    </>,
+    tags: ['resources'],
+  },
+  {
+    
+    'question': 'Are previous challenges or write ups available?',
+    'keywords': ['previous', 'challenges', 'write-ups'],
+    'response': [
+      'Yes. You can find them on the official InCTF website.',
+    ],
+    'answer': <>
+      Yes. You can find them on the official InCTF website and their public code repositories.
+    </>,
+    tags: ['resources'],
+  },
+  {
+    
+    'question': 'Will sessions or talks be recorded?',
+    'keywords': ['recorded', 'sessions'],
+    'response': [
+      'Yes. Training sessions and webinars are usually recorded.',
+    ],
+    'answer': <>
+      Yes. Training sessions and webinars are usually recorded and shared post-event on event portal.
+    </>,
+    tags: ['resources'],
+  },
+  {
+    
+    'question': 'How do I contact the organizers?',
+    'keywords': ['contact', 'organizers'],
+    'response': [
+      'You can reach out via the official email address.',
+    ],
+    'answer': <>
+      You can reach out via the official email address or the contact form provided on the InCTF website.
     </>,
     tags: ['support'],
   },

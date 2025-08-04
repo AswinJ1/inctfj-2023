@@ -114,10 +114,10 @@ const FAQPage = () => {
                 Write to us at 
                 {' '}
                 <a 
-                  href="mailto:inctfj@am.amrita.edu" 
+                  href="mailto:inctf@am.amrita.edu" 
                   className="text-blue-600 hover:text-blue-800 hover:underline"
                 >
-                  inctfj@am.amrita.edu
+                  inctf@am.amrita.edu
                 </a>
               </div>
             </div>

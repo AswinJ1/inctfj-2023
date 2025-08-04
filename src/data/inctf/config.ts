@@ -9,6 +9,7 @@ export default <ConfigContextType>{
   },
   analytics: {
     gTag: 'UA-120910433-1',
+    gtmContainerId: 'GTM-NXQWL52R', // Add this line
   },
   assets: {
     logo: {
